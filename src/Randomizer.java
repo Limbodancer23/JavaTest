@@ -3,35 +3,38 @@ import java.util.*;
 
 public class Randomizer {
     PrizeSaver saver;
-    List<Double> list;
+    private final List<Character> list;
     Random r = new Random();
-    private double rand;
 
     public Randomizer(PrizeSaver saver) {
         this.saver = saver;
         this.list = new ArrayList<>();
-        list.add(Notebook.rarity);
-        list.add(Car.rarity);
-        list.add(Bear.rarity);
+        prepareCycle();
     }
 
     public void CycleOfFortune() {
-        rand = Math.random();
-        while (true) {
-            int pos = r.nextInt(list.size());
-            if (rand <= list.get(pos)) {
-                if (Notebook.rarity == list.get(pos)) {
-                    saver.add(new Notebook());
-                    System.out.println("Jackpot!!!");
-                    break;
-                } else if (Car.rarity == list.get(pos)) {
-                    saver.add(new Car());
-                    break;
-                }else if (Bear.rarity == list.get(pos)) {
-                    saver.add(new Bear());
-                    break;
-                }else System.out.println("Not lucky..."); break;
-            }
+        int pos = r.nextInt(list.size());
+        System.out.println(pos);
+        if (list.get(pos).equals('n')) {
+            System.out.println("Jackpot!!!");
+            saver.add(new Notebook());
+        } else if (list.get(pos).equals('b')) {
+            saver.add(new Bear());
+        } else if (list.get(pos).equals('c')) {
+            saver.add(new Car());
+        } else System.out.println("Not lucky...");
+    }
+
+    public void prepareCycle(){
+        list.clear();
+        for (int i = 0; i < Notebook.rarity * 100; i++) {
+            list.add('n');
+        }
+        for (int i = 0; i < Car.rarity * 100; i++) {
+            list.add('c');
+        }
+        for (int i = 0; i < Bear.rarity * 100; i++) {
+            list.add('b');
         }
     }
 

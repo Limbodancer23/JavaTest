@@ -51,30 +51,36 @@ public class UserView {
                     break;
                 case 5:
                     choice = promt("Select toy:\n1)Car\n2)Bear\n3)Notebook");
-                    Scanner scan = new Scanner(System.in);
-                    try {
-                        double value;
                         if (choice == 1) {
-                            System.out.printf("Enter new value:\nCurrent value: %.1f\n", Car.rarity);
-                            value = scan.nextDouble();
-                            Car.rarity = value;
+                           Car.rarity =  setValue(Car.rarity);
                         } else if (choice == 2) {
-                            System.out.printf("Enter new value:\nCurrent value: %.1f\n", Bear.rarity);
-                            value = scan.nextDouble();
-                            Bear.rarity = value;
+                            Bear.rarity = setValue(Bear.rarity);
                         } else if (choice == 3) {
-                            value = scan.nextDouble();
-                            System.out.printf("Enter new value:\nCurrent value: %.1f\n", Notebook.rarity);
-                            Notebook.rarity = value;
-                        } else System.out.println("Wrong number!");
-                    }catch (InputMismatchException e){
-                        System.out.println(e.getMessage());
-                    }
+                           Notebook.rarity = setValue(Notebook.rarity);
+                        }
                     break;
                 case 6:
                     System.exit(0);
             }
         }
+    }
+
+    private double setValue(Double rarity){
+        try {
+            double value;
+            Scanner scan = new Scanner(System.in);
+            while (true) {
+                System.out.printf("Enter new value:\nCurrent value: %.1f\n", rarity);
+                value = scan.nextDouble();
+                if (value > 0 && value < 1.0) {
+                    randomizer.prepareCycle();
+                    return value;
+                } else System.out.println("Value must be positive and less than 1.0!");
+            }
+        }catch (InputMismatchException e){
+            System.out.println(e.getMessage());
+        }
+        return 0.0;
     }
 
     private int promt(String massage) {

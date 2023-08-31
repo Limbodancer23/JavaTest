@@ -1,7 +1,7 @@
 public class Bear extends Toy {
         private int id;
         private String name;
-        static double rarity = 1.0;
+        static double rarity = 0.6;
 
 
         public Bear() {

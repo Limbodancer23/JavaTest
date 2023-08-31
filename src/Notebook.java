@@ -2,7 +2,7 @@
 public class Notebook extends Toy {
     private int id;
     private String name;
-    static double rarity = 0.3;
+    static double rarity = 0.1;
 
     public Notebook() {
         this.name = "Notebook";
@@ -11,7 +11,7 @@ public class Notebook extends Toy {
 
     @Override
     public String toString() {
-        return "{" +
+        return "Notebook{" +
                 "name='" + name + '\'' +
                 ", rarity=" + rarity +", id=" + id +
                 '}';
