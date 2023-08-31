@@ -4,13 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a98c0f04-755b-4dac-9999-33a947e257ec" name="Changes" comment="init commit">
+    <list default="true" id="a98c0f04-755b-4dac-9999-33a947e257ec" name="Changes" comment="new changes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Bear.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Bear.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Car.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Notebook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Notebook.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Randomizer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Randomizer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UserView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UserView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Bear.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Toys/Bear.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Toys/Car.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FileManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/FileManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Notebook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Toys/Notebook.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PrizeSaver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/PrizeSaver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Randomizer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Randomizer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Toy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Toys/Toy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ToysDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Model/ToysDB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UserView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UserView/UserView.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,11 +66,58 @@
       <option name="project" value="LOCAL" />
       <updated>1693247847584</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="new changes">
+      <option name="closed" value="true" />
+      <created>1693492247948</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1693492247948</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="origin/master" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="init commit" />
+    <MESSAGE value="new changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="new changes" />
   </component>
 </project>

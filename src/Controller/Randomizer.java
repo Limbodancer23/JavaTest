@@ -1,4 +1,8 @@
-
+package Controller;
+import Model.PrizeSaver;
+import Toys.Bear;
+import Toys.Car;
+import Toys.Notebook;
 import java.util.*;
 
 public class Randomizer {
@@ -40,7 +44,7 @@ public class Randomizer {
 
     @Override
     public String toString() {
-        return "Randomizer{" +
+        return "Controller.Randomizer{" +
                 "queue=" + saver;
     }
 }

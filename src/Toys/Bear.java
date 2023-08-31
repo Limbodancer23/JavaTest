@@ -1,7 +1,11 @@
+package Toys;
+
+import Toys.Toy;
+
 public class Bear extends Toy {
         private int id;
         private String name;
-        static double rarity = 0.6;
+        public static double rarity = 0.6;
 
 
         public Bear() {

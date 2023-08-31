@@ -1,3 +1,8 @@
+package UserView;
+import Controller.Randomizer;
+import Model.FileManager;
+import Model.PrizeSaver;
+import Toys.*;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
@@ -11,6 +16,8 @@ public class UserView {
         this.saver = saver;
         this.randomizer = randomizer;
     }
+
+
 
     public void Start() {
         System.out.println("Welcome to toy shop!\n---------------------------------------------");

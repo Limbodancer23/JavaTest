@@ -1,7 +1,11 @@
+package Toys;
+
+import Toys.Toy;
+
 public class Car extends Toy {
     private int id;
     private String name;
-    static double rarity = 0.3;
+    public static double rarity = 0.3;
 
     public Car() {
         this.id = count++;

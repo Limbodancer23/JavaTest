@@ -1,8 +1,10 @@
+package Toys;
+
 public abstract class Toy {
     private int id;
     private String name;
     private double rarity;
-    static int count = 1;
+    public static int count = 1;
 
     public Toy() {
     }
